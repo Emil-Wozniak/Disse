@@ -4,12 +4,12 @@ class StyledTextField extends StatelessWidget {
   const StyledTextField(
       {super.key,
       required this.text,
-      required this.length,
+      this.length = 20,
       required this.keyboardType,
-      required this.icon,
-      required this.textColor,
-      required this.iconColor,
-      required this.borderColor});
+      this.icon = const Icon(Icons.abc),
+      this.textColor = const TextStyle(color: Colors.black),
+      this.iconColor = Colors.orangeAccent,
+      this.borderColor = Colors.orange});
   final int length;
   final TextInputType keyboardType;
   final Widget text;
