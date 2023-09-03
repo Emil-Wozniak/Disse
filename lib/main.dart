@@ -1,7 +1,7 @@
-import 'package:disse/navigation/Routes.dart';
+import 'package:disse/navigation/routes.dart';
 import 'package:flutter/material.dart';
 
-import 'navigation/Screens.dart';
+import 'navigation/screens.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,5 +19,4 @@ class MyApp extends StatelessWidget {
         initialRoute: Screens.home.name,
         routes: routes(),
       );
-
 }

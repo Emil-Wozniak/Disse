@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../configuration/common_constants.dart';
-import '../navigation/Screens.dart';
+import '../navigation/screens.dart';
 import '../screens/game/game_screen.dart';
 import '../screens/main/main_screen.dart';
 import '../screens/splash/splash_screen.dart';
@@ -19,7 +19,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         leading: const Icon(Icons.account_circle_rounded),
         leadingWidth: 100,
         backgroundColor: Colors.black45,
-        title: const Text(CommonConstant.aPP_NAME),
+        title: const Text(CommonConstant.appName),
         actions: [
           PopupMenuButton(
               itemBuilder: _createItems([
