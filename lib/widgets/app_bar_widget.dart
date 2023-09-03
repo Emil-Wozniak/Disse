@@ -19,7 +19,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         leading: const Icon(Icons.account_circle_rounded),
         leadingWidth: 100,
         backgroundColor: Colors.black45,
-        title: const Text(CommonConstant.APP_NAME),
+        title: const Text(CommonConstant.aPP_NAME),
         actions: [
           PopupMenuButton(
               itemBuilder: _createItems([
