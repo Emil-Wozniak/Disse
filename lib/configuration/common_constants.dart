@@ -1,3 +1,3 @@
 class CommonConstant {
-  static const String APP_NAME = 'DISSE';
+  static const String appName = 'DISSE';
 }
