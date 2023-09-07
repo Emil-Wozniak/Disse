@@ -9,10 +9,11 @@ class BaseScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => Scaffold(
-      appBar: AppBarWidget(
-        context: context,
-      ),
-      body: Container(
-        child: child,
-      ));
+        appBar: AppBarWidget(
+          context: context,
+        ),
+        body: Container(
+          child: child,
+        ),
+      );
 }
