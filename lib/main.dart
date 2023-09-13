@@ -1,4 +1,6 @@
 import 'package:disse/navigation/routes.dart';
+import 'package:disse/utils/color_app.dart';
+
 import 'package:flutter/material.dart';
 
 import 'navigation/screens.dart';
@@ -14,7 +16,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => MaterialApp(
-        theme: ThemeData(),
+        theme: ColorApp.light,
+        darkTheme: ColorApp.dark,
         navigatorKey: MyApp.navigatorKey,
         initialRoute: Screens.home.name,
         routes: routes(),
