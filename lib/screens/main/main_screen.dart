@@ -6,5 +6,5 @@ class MainScreen extends StatelessWidget {
   const MainScreen({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) => const BaseScaffold(child: Text("main"));
+  Widget build(BuildContext context) => const BaseScaffold(child: Text("Main"));
 }

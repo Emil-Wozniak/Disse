@@ -9,12 +9,9 @@ class BottomAppBarWidget extends StatefulWidget {
   State<BottomAppBarWidget> createState() => _BottomAppBarWidgetState();
 }
 
-
 class _BottomAppBarWidgetState extends State<BottomAppBarWidget> {
   @override
   Widget build(BuildContext context) {
-    
-
     return BottomAppBar(
       shape: const CircularNotchedRectangle(),
       notchMargin: 5,
@@ -49,4 +46,3 @@ class _BottomAppBarWidgetState extends State<BottomAppBarWidget> {
     );
   }
 }
-    
