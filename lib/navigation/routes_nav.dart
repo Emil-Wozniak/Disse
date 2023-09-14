@@ -1,10 +1,10 @@
-
-import 'package:disse/screens/main/main_screen.dart';
-import 'package:disse/screens/splash/splash_screen.dart';
 import 'package:flutter/widgets.dart';
 
 import '../screens/game/game_screen.dart';
-import 'Screens.dart';
+import '../screens/main/main_screen.dart';
+
+import '../screens/splash/splash_screen.dart';
+import 'screens.dart';
 
 Map<String, WidgetBuilder> routes() => {
       Screens.home.name: (_) => const MainScreen(),
