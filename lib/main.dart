@@ -1,9 +1,8 @@
-import 'package:disse/navigation/routes.dart';
+import 'package:disse/navigation/routes_nav.dart';
+import 'package:disse/navigation/screens_nav.dart';
 import 'package:disse/utils/color_app.dart';
 
 import 'package:flutter/material.dart';
-
-import 'navigation/screens.dart';
 
 void main() {
   runApp(const MyApp());

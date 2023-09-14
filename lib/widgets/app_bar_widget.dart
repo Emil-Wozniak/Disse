@@ -1,10 +1,9 @@
+import 'package:disse/configuration/common_constants.dart';
+import 'package:disse/navigation/screens_nav.dart';
+import 'package:disse/screens/game/game_screen.dart';
+import 'package:disse/screens/main/main_screen.dart';
+import 'package:disse/screens/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
-
-import '../configuration/common_constants.dart';
-import '../navigation/screens.dart';
-import '../screens/game/game_screen.dart';
-import '../screens/main/main_screen.dart';
-import '../screens/splash/splash_screen.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   final BuildContext context;
