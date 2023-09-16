@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../utils/color_app.dart';
 import 'app_bar_widget.dart';
 
 class BaseScaffold extends StatelessWidget {
@@ -12,8 +13,16 @@ class BaseScaffold extends StatelessWidget {
         appBar: AppBarWidget(
           context: context,
         ),
-        body: Container(
-          child: child,
+        body: Center(
+          child: Container(
+            decoration: BoxDecoration(
+                gradient: LinearGradient(
+              begin: Alignment.bottomCenter,
+              end: Alignment.topCenter,
+              colors: ColorApp.gameBackgroundGradient,
+            )),
+            child: Center(child: child),
+          ),
         ),
       );
 }

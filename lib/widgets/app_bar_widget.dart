@@ -3,6 +3,8 @@ import 'package:disse/navigation/screens_nav.dart';
 import 'package:disse/screens/game/game_screen.dart';
 import 'package:disse/screens/main/main_screen.dart';
 import 'package:disse/screens/splash/splash_screen.dart';
+import 'package:disse/utils/color_app.dart';
+import 'package:disse/widgets/style/TextStyles.dart';
 import 'package:flutter/material.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
@@ -15,22 +17,37 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) => AppBar(
-        leading: const Icon(Icons.account_circle_rounded),
+        leading: const Icon(
+          Icons.account_circle_rounded,
+          color: Colors.white70,
+        ),
         leadingWidth: 100,
-        backgroundColor: Colors.black45,
-        title: const Text(CommonConstant.appName),
+        backgroundColor: ColorApp.bgColor,
+        title: Center(
+            child: Text(
+          CommonConstant.appName,
+          style: AppTextStyles.islandMomentsTextStyle(
+              fontSize: 36.0, fontWeight: FontWeight.w700),
+          textAlign: TextAlign.center,
+        )),
         actions: [
           PopupMenuButton(
-              itemBuilder: _createItems([
-                Screens.home,
-                Screens.splash,
-                Screens.game,
-              ]),
-              onSelected: _onSelectNavigate({
-                Screens.home: const MainScreen(),
-                Screens.splash: const SplashScreen(),
-                Screens.game: const GameScreen(),
-              })),
+            itemBuilder: _createItems([
+              Screens.home,
+              Screens.splash,
+              Screens.game,
+            ]),
+            onSelected: _onSelectNavigate({
+              Screens.home: const MainScreen(),
+              Screens.splash: const SplashScreen(),
+              Screens.game: const GameScreen(),
+            }),
+            color: ColorApp.bgColor,
+            icon: const Icon(
+              Icons.more_vert_sharp,
+              color: Colors.white70,
+            ),
+          ),
         ],
       );
 
@@ -40,7 +57,10 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
 
   PopupMenuItem<Screens> _createItem(Screens screen) => PopupMenuItem(
         value: screen,
-        child: Text(screen.name),
+        child: Text(
+          screen.name,
+          style: AppTextStyles.islandMomentsTextStyle(fontSize: 30.0),
+        ),
       );
 
   PopupMenuItemSelected<Screens> _onSelectNavigate(
