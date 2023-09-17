@@ -1,6 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class ColorApp {
+  static Color bgColor = HexColor("#091522");
+  static List<Color> gameBackgroundGradient = [
+    HexColor("#2f3642"),
+    HexColor("#6c5c5f"),
+    HexColor("#2a3148"),
+    HexColor("#5e352b"),
+    HexColor("#52311c"),
+    HexColor("#140805"),
+  ];
+
   Color lightPrimaryColor = Colors.orange;
   Color lightSecondaryColor = Colors.black;
   Color lightThirdColor = Colors.white;
