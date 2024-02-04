@@ -60,6 +60,7 @@ class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
         child: Text(
           screen.name,
           style: AppTextStyles.islandMomentsTextStyle(fontSize: 30.0),
+          key: Key(screen.name),
         ),
       );
 
